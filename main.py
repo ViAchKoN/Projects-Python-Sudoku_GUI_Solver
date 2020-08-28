@@ -110,17 +110,18 @@ class Grid:
         return not num in set(self.get_column(column_number))
 
 
-    # def check_subgrid_unique(self: object, cell: tuple) -> tuple:
-    #     # Fill subgrids with cells
-    #
-    #     rows = tuple([i, 0] for i in range(3))
-    #     subgrid1 = tuple((i[0], i[1]) for i in rows for i[0] in range(3))
-    #
-    #
-    #
-    #
-    #     subgrid01 = tuple((j[0], j[1]) for j in a for j[0] in range(3))
-    #
+    def check_subgrid_unique(self: object, cell: tuple) -> tuple:
+        self.get_subgrid_coordinates()
+
+
+        rows = tuple([i, 0] for i in range(3))
+        subgrid1 = tuple((i[0], i[1]) for i in rows for i[0] in range(3))
+
+
+
+
+        subgrid01 = tuple((j[0], j[1]) for j in a for j[0] in range(3))
+
 
 
 class Solver:
@@ -182,7 +183,6 @@ if __name__ == "__main__":
     # )
 
     grid = Grid(grid)
-
     grid.get_subgrid_coordinates()
 
     a = grid.get_empty_cells()
