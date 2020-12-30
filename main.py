@@ -7,7 +7,12 @@ from grid import Grid
 from gui import GUI
 
 
-def run(grid: tuple):
+def run(grid: tuple) -> None:
+    '''
+    Game procedure
+    :param grid: Sudoku grid
+    :return:
+    '''
     pygame.init()
     pygame.display.set_caption('Sudoku')  # Setting screen caption name
 
