@@ -1,3 +1,3 @@
-# Sudoku game with built-in solver
+# Sudoku 
 
-Sudoku
+Sudoku game with built-in solver
