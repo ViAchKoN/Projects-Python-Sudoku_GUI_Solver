@@ -1,6 +1,6 @@
 # Sudoku (python)
 
-Sudoku game with built-in solver.
+Sudoku game with a built-in solver.
 
 **Controls**:
   * Use a mouse to select a cell on the board
