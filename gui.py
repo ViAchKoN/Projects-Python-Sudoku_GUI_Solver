@@ -76,7 +76,7 @@ class GUI:
         :return:
         '''
         x = cell[1] * CELL_SIZE + CELL_SIZE / 3
-        y = cell[0] * CELL_SIZE + CELL_SIZE / 5
+        y = cell[0] * CELL_SIZE + CELL_SIZE / 12
         if value != 0:
             text = self.font.render(str(value), True, COLORS['BLACK'])
             self.display.blit(text, (x, y))
@@ -84,7 +84,7 @@ class GUI:
             x = cell[1]
             y = cell[0]
             text = self.font.render(str(self.variants[cell]), True, COLORS['LIGHT_GRAY'])
-            self.display.blit(text, (x * CELL_SIZE + CELL_SIZE - CELL_SIZE / 3, y * CELL_SIZE))
+            self.display.blit(text, (x * CELL_SIZE + CELL_SIZE - CELL_SIZE / 2, y * CELL_SIZE))
         else:
             pygame.draw.rect(self.display, COLORS['WHITE'], (x, y, CELL_SIZE/2, CELL_SIZE/2))
 
@@ -152,4 +152,4 @@ class GUI:
         elif text_type == 'bad_grid':
             text = 'Board cant be solved!'
         text = self.font.render(text, True, COLORS['BLACK'])
-        self.display.blit(text, (SCREEN_WIDTH/5, SCREEN_HEIGHT/2))
+        self.display.blit(text, (SCREEN_WIDTH/12, SCREEN_HEIGHT/2.5))
