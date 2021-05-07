@@ -1,6 +1,5 @@
 # Sudoku (PyGame)
 _____________________________
-
 ## Description
 Sudoku game with a built-in solver which uses backtracking algorithm.
 
