@@ -1,6 +1,8 @@
-# Sudoku (python)
+# Sudoku (PyGame)
+_____________________________
 
-Sudoku game with a built-in solver.
+## Description
+Sudoku game with a built-in solver which uses backtracking algorithm.
 
 **Controls**:
   * Use a mouse to select a cell on the board
